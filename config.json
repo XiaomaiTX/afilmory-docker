@@ -1,22 +1,15 @@
 {
-  "name": "Innei's Photo Gallery",
-  "title": "Innei's Photo Gallery",
-  "description": "Capturing beautiful moments in life, documenting daily warmth and emotions through my lens.",
-  "url": "https://gallery.innei.in",
+  "name": "Your Photo Gallery",
+  "title": "Your Photo Gallery",
+  "description": "Capturing beautiful moments in life",
+  "url": "https://your-domain.com",
   "accentColor": "#fb7185",
-  "ogImage": {
-    "width": 1200,
-    "height": 630
-  },
   "author": {
-    "name": "Photo Gallery",
-    "url": "https://innei.in/",
-    "avatar": "//cdn.jsdelivr.net/gh/Innei/static@master/avatar.png"
+    "name": "Your Name",
+    "url": "https://your-website.com",
+    "avatar": "https://your-avatar-url.com/avatar.png"
   },
   "social": {
-    "twitter": "@__oQuery"
-  },
-  "extra": {
-    "accessRepo": true
+    "twitter": "@yourusername"
   }
 }
