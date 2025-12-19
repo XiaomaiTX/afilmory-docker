@@ -17,13 +17,19 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git perl
 
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add --no-cache \
     python3 \
-    python3-pip \
+    python3-dev \
+    py3-pip \
     make \
     g++ \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    gcc \
+    git \
+    perl \
+    postgresql-dev \
+    libpq
+
+RUN ln -sf /usr/bin/python3 /usr/bin/python
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
