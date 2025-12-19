@@ -13,6 +13,8 @@ export default defineBuilderConfig(() => ({
   ],
   storage: {
     // Storage configuration
+    accessKeyId: 'XXX',
+    secretAccessKey: 'XXXXXY',
     provider: 's3',
     bucket: 'your-photos-bucket',
     endpoint: 'your-s3-endpoint',
