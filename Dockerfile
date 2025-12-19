@@ -15,7 +15,15 @@ RUN corepack enable
 # -----------------
 FROM base AS builder
 
-RUN apk update && apk add --no-cache git perl
+RUN apk update && apk add --no-cache \
+    git \
+    perl \
+    python3 \
+    py3-pip \
+    make \
+    g++ \
+    postgresql-dev \
+    && ln -sf python3 /usr/bin/python
 
 RUN git clone https://github.com/Afilmory/Afilmory --depth 1 .
 COPY config.json ./
