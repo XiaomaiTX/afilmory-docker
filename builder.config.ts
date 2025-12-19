@@ -5,9 +5,8 @@ export default defineBuilderConfig(() => ({
     // Use remote repository as manifest and thumbnail cache
     githubRepoSyncPlugin({
       repo: {
+        enable: false,
         url: 'https://github.com/xxx/xxx',
-        token: '',
-        branch: 'main',
       },
     }),
   ],
