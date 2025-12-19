@@ -12,7 +12,7 @@ export default defineBuilderConfig(() => ({
   plugins: [
     githubRepoSyncPlugin({
       repo: {
-        enable: true,
+        enable: false,
         url: process.env.BUILDER_REPO_URL!,
         token: process.env.GIT_TOKEN!,
         branch: process.env.BUILDER_REPO_BRANCH || 'main',
