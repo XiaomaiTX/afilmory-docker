@@ -17,6 +17,16 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git perl
 
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    make \
+    g++ \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 RUN git clone https://github.com/Afilmory/Afilmory --depth 1 .
 COPY config.json ./
 COPY builder.config.ts ./
